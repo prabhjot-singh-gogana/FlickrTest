@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329B5452F66688F5A8263930 /* Pods_FlikrTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1BA97CFA54BABE436EB3690 /* Pods_FlikrTest.framework */; };
 		803C43C42661BBC20066D6DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43C32661BBC20066D6DD /* AppDelegate.swift */; };
 		803C43C62661BBC20066D6DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43C52661BBC20066D6DD /* SceneDelegate.swift */; };
-		803C43C82661BBC20066D6DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43C72661BBC20066D6DD /* ViewController.swift */; };
-		803C43CB2661BBC20066D6DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803C43C92661BBC20066D6DD /* Main.storyboard */; };
+		803C43C82661BBC20066D6DD /* HomeFlikrVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43C72661BBC20066D6DD /* HomeFlikrVC.swift */; };
 		803C43CD2661BBC50066D6DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 803C43CC2661BBC50066D6DD /* Assets.xcassets */; };
-		803C43D02661BBC50066D6DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803C43CE2661BBC50066D6DD /* LaunchScreen.storyboard */; };
+		803C43E22661CCC10066D6DD /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43DF2661CCC00066D6DD /* Network.swift */; };
+		803C43E32661CCC10066D6DD /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803C43E02661CCC10066D6DD /* Extensiones.swift */; };
+		807056162668A88C00DE18A2 /* HomeFlikrViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807056152668A88C00DE18A2 /* HomeFlikrViewModel.swift */; };
+		807056182668CE4D00DE18A2 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807056172668CE4D00DE18A2 /* FlickrPhoto.swift */; };
+		8070561A2668F3DE00DE18A2 /* ReactiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807056192668F3DE00DE18A2 /* ReactiveExtension.swift */; };
+		8070562A266911E200DE18A2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803C43C92661BBC20066D6DD /* Home.storyboard */; };
+		8070562B266911E700DE18A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 803C43CE2661BBC50066D6DD /* LaunchScreen.storyboard */; };
+		8070562D26693A3500DE18A2 /* FavouritesHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070562C26693A3500DE18A2 /* FavouritesHomeVC.swift */; };
+		8070563126693AEA00DE18A2 /* CellPhotoHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070562F26693AEA00DE18A2 /* CellPhotoHome.swift */; };
+		8070563226693AEA00DE18A2 /* CellPhotoHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8070563026693AEA00DE18A2 /* CellPhotoHome.xib */; };
+		80D1ACBC2669DCB2003AB2AA /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D1ACBB2669DCB2003AB2AA /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		107B2B1BB2E35D14C9FD1317 /* Pods-FlikrTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrTest.release.xcconfig"; path = "Target Support Files/Pods-FlikrTest/Pods-FlikrTest.release.xcconfig"; sourceTree = "<group>"; };
+		7486656E471A83330C6170DC /* Pods-FlikrTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlikrTest.debug.xcconfig"; path = "Target Support Files/Pods-FlikrTest/Pods-FlikrTest.debug.xcconfig"; sourceTree = "<group>"; };
 		803C43C02661BBC20066D6DD /* FlikrTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlikrTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		803C43C32661BBC20066D6DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		803C43C52661BBC20066D6DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		803C43C72661BBC20066D6DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		803C43CA2661BBC20066D6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		803C43C72661BBC20066D6DD /* HomeFlikrVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlikrVC.swift; sourceTree = "<group>"; };
+		803C43CA2661BBC20066D6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		803C43CC2661BBC50066D6DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		803C43CF2661BBC50066D6DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		803C43D12661BBC50066D6DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		803C43DF2661CCC00066D6DD /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		803C43E02661CCC10066D6DD /* Extensiones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		807056152668A88C00DE18A2 /* HomeFlikrViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFlikrViewModel.swift; sourceTree = "<group>"; };
+		807056172668CE4D00DE18A2 /* FlickrPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
+		807056192668F3DE00DE18A2 /* ReactiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtension.swift; sourceTree = "<group>"; };
+		8070562C26693A3500DE18A2 /* FavouritesHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesHomeVC.swift; sourceTree = "<group>"; };
+		8070562F26693AEA00DE18A2 /* CellPhotoHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellPhotoHome.swift; sourceTree = "<group>"; };
+		8070563026693AEA00DE18A2 /* CellPhotoHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellPhotoHome.xib; sourceTree = "<group>"; };
+		80D1ACBB2669DCB2003AB2AA /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A1BA97CFA54BABE436EB3690 /* Pods_FlikrTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlikrTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329B5452F66688F5A8263930 /* Pods_FlikrTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				803C43C22661BBC20066D6DD /* FlikrTest */,
 				803C43C12661BBC20066D6DD /* Products */,
+				90E1571CD5F665198D374DC3 /* Pods */,
+				D9D0C2DD7233A9DC7E87FA09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,105 @@
 		803C43C22661BBC20066D6DD /* FlikrTest */ = {
 			isa = PBXGroup;
 			children = (
-				803C43C32661BBC20066D6DD /* AppDelegate.swift */,
-				803C43C52661BBC20066D6DD /* SceneDelegate.swift */,
-				803C43C72661BBC20066D6DD /* ViewController.swift */,
-				803C43C92661BBC20066D6DD /* Main.storyboard */,
+				807056292669066800DE18A2 /* Helper */,
+				807056272669063900DE18A2 /* SupportingFiles */,
+				807056262669061F00DE18A2 /* HomeFlickr */,
+				803C43D82661C85B0066D6DD /* Resources */,
+			);
+			path = FlikrTest;
+			sourceTree = "<group>";
+		};
+		803C43D82661C85B0066D6DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				803C43CC2661BBC50066D6DD /* Assets.xcassets */,
 				803C43CE2661BBC50066D6DD /* LaunchScreen.storyboard */,
 				803C43D12661BBC50066D6DD /* Info.plist */,
 			);
-			path = FlikrTest;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		80705623266905D000DE18A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				807056152668A88C00DE18A2 /* HomeFlikrViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80705624266905E000DE18A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8070562E26693ABD00DE18A2 /* CellPhotoHome */,
+				803C43C72661BBC20066D6DD /* HomeFlikrVC.swift */,
+				8070562C26693A3500DE18A2 /* FavouritesHomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80705625266905EA00DE18A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				807056172668CE4D00DE18A2 /* FlickrPhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		807056262669061F00DE18A2 /* HomeFlickr */ = {
+			isa = PBXGroup;
+			children = (
+				80705625266905EA00DE18A2 /* Model */,
+				80705624266905E000DE18A2 /* View */,
+				80705623266905D000DE18A2 /* ViewModel */,
+				803C43C92661BBC20066D6DD /* Home.storyboard */,
+			);
+			path = HomeFlickr;
+			sourceTree = "<group>";
+		};
+		807056272669063900DE18A2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				803C43C32661BBC20066D6DD /* AppDelegate.swift */,
+				803C43C52661BBC20066D6DD /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		807056292669066800DE18A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				803C43E02661CCC10066D6DD /* Extensiones.swift */,
+				803C43DF2661CCC00066D6DD /* Network.swift */,
+				807056192668F3DE00DE18A2 /* ReactiveExtension.swift */,
+				80D1ACBB2669DCB2003AB2AA /* GradientView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8070562E26693ABD00DE18A2 /* CellPhotoHome */ = {
+			isa = PBXGroup;
+			children = (
+				8070562F26693AEA00DE18A2 /* CellPhotoHome.swift */,
+				8070563026693AEA00DE18A2 /* CellPhotoHome.xib */,
+			);
+			path = CellPhotoHome;
+			sourceTree = "<group>";
+		};
+		90E1571CD5F665198D374DC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7486656E471A83330C6170DC /* Pods-FlikrTest.debug.xcconfig */,
+				107B2B1BB2E35D14C9FD1317 /* Pods-FlikrTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D9D0C2DD7233A9DC7E87FA09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1BA97CFA54BABE436EB3690 /* Pods_FlikrTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 803C43D42661BBC50066D6DD /* Build configuration list for PBXNativeTarget "FlikrTest" */;
 			buildPhases = (
+				8DDC84DBA20A1E90DED36D7C /* [CP] Check Pods Manifest.lock */,
 				803C43BC2661BBC20066D6DD /* Sources */,
 				803C43BD2661BBC20066D6DD /* Frameworks */,
 				803C43BE2661BBC20066D6DD /* Resources */,
+				10D57857AB3B472457A8AE25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,34 +242,85 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803C43D02661BBC50066D6DD /* LaunchScreen.storyboard in Resources */,
+				8070562A266911E200DE18A2 /* Home.storyboard in Resources */,
+				8070562B266911E700DE18A2 /* LaunchScreen.storyboard in Resources */,
+				8070563226693AEA00DE18A2 /* CellPhotoHome.xib in Resources */,
 				803C43CD2661BBC50066D6DD /* Assets.xcassets in Resources */,
-				803C43CB2661BBC20066D6DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10D57857AB3B472457A8AE25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlikrTest/Pods-FlikrTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlikrTest/Pods-FlikrTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlikrTest/Pods-FlikrTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDC84DBA20A1E90DED36D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlikrTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		803C43BC2661BBC20066D6DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				803C43C82661BBC20066D6DD /* ViewController.swift in Sources */,
+				80D1ACBC2669DCB2003AB2AA /* GradientView.swift in Sources */,
+				807056162668A88C00DE18A2 /* HomeFlikrViewModel.swift in Sources */,
+				803C43C82661BBC20066D6DD /* HomeFlikrVC.swift in Sources */,
+				807056182668CE4D00DE18A2 /* FlickrPhoto.swift in Sources */,
 				803C43C42661BBC20066D6DD /* AppDelegate.swift in Sources */,
+				803C43E22661CCC10066D6DD /* Network.swift in Sources */,
+				803C43E32661CCC10066D6DD /* Extensiones.swift in Sources */,
 				803C43C62661BBC20066D6DD /* SceneDelegate.swift in Sources */,
+				8070563126693AEA00DE18A2 /* CellPhotoHome.swift in Sources */,
+				8070561A2668F3DE00DE18A2 /* ReactiveExtension.swift in Sources */,
+				8070562D26693A3500DE18A2 /* FavouritesHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		803C43C92661BBC20066D6DD /* Main.storyboard */ = {
+		803C43C92661BBC20066D6DD /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				803C43CA2661BBC20066D6DD /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		803C43CE2661BBC50066D6DD /* LaunchScreen.storyboard */ = {
@@ -282,6 +450,7 @@
 		};
 		803C43D52661BBC50066D6DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7486656E471A83330C6170DC /* Pods-FlikrTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.goganasolutions.FlikrTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goganasolutions.ritaspizzeria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +469,7 @@
 		};
 		803C43D62661BBC50066D6DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107B2B1BB2E35D14C9FD1317 /* Pods-FlikrTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +479,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.goganasolutions.FlikrTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goganasolutions.ritaspizzeria;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

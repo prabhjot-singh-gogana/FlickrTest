@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellPhotoHome" rowHeight="220" id="z4S-DY-QLT" customClass="CellPhotoHome" customModule="FlikrTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z4S-DY-QLT" id="JIP-0Y-wvp">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dw4-xE-ZsW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="1Li-DL-Ctf"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HH2-fH-pN3" customClass="GradientView" customModule="FlikrTest" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="220" id="2wF-TT-mvm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" white="0.0" alpha="0.45416845034246578" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photograher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuP-6D-iFt">
+                        <rect key="frame" x="27" y="188" width="145" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ux3-Y3-IFQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndr-MR-z4x">
+                        <rect key="frame" x="350" y="16" width="35" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="DUG-uf-ovU"/>
+                            <constraint firstAttribute="width" constant="35" id="b93-UC-CwQ"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="star.circle" catalog="system"/>
+                        <state key="selected" image="star.circle.fill" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CX8-xK-IZk">
+                        <rect key="frame" x="27" y="156" width="115" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="kSW-BA-jg4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nuP-6D-iFt" firstAttribute="leading" secondItem="JIP-0Y-wvp" secondAttribute="leading" constant="27" id="18r-mc-de1"/>
+                    <constraint firstItem="CX8-xK-IZk" firstAttribute="leading" secondItem="JIP-0Y-wvp" secondAttribute="leading" constant="27" id="1QW-BD-kt7"/>
+                    <constraint firstItem="Dw4-xE-ZsW" firstAttribute="leading" secondItem="JIP-0Y-wvp" secondAttribute="leading" id="5BH-Bq-nmj"/>
+                    <constraint firstItem="Dw4-xE-ZsW" firstAttribute="top" secondItem="JIP-0Y-wvp" secondAttribute="top" id="9VT-sA-z6t"/>
+                    <constraint firstItem="nuP-6D-iFt" firstAttribute="top" secondItem="CX8-xK-IZk" secondAttribute="bottom" constant="3" id="9ug-CE-90d"/>
+                    <constraint firstItem="HH2-fH-pN3" firstAttribute="top" secondItem="JIP-0Y-wvp" secondAttribute="top" id="HOu-G9-ves"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CX8-xK-IZk" secondAttribute="trailing" constant="20" symbolic="YES" id="KSm-pD-itn"/>
+                    <constraint firstAttribute="trailing" secondItem="Dw4-xE-ZsW" secondAttribute="trailing" id="Pbm-jR-pLJ"/>
+                    <constraint firstAttribute="bottom" secondItem="HH2-fH-pN3" secondAttribute="bottom" id="PxG-Mu-PkV"/>
+                    <constraint firstItem="HH2-fH-pN3" firstAttribute="leading" secondItem="JIP-0Y-wvp" secondAttribute="leading" id="S6q-Va-KIx"/>
+                    <constraint firstAttribute="bottom" secondItem="Dw4-xE-ZsW" secondAttribute="bottom" id="UM5-KK-gqx"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nuP-6D-iFt" secondAttribute="trailing" constant="20" symbolic="YES" id="WWb-V3-67S"/>
+                    <constraint firstAttribute="trailing" secondItem="Ndr-MR-z4x" secondAttribute="trailing" constant="29" id="Y9k-JM-DNw"/>
+                    <constraint firstAttribute="bottom" secondItem="nuP-6D-iFt" secondAttribute="bottom" constant="11" id="a81-Ar-cbR"/>
+                    <constraint firstAttribute="trailing" secondItem="HH2-fH-pN3" secondAttribute="trailing" id="w0K-gQ-eOr"/>
+                    <constraint firstItem="Ndr-MR-z4x" firstAttribute="top" secondItem="JIP-0Y-wvp" secondAttribute="top" constant="16" id="zQO-3Z-1q2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnFav" destination="Ndr-MR-z4x" id="zCH-Kv-exg"/>
+                <outlet property="imgOfFlickr" destination="Dw4-xE-ZsW" id="wze-op-xnm"/>
+                <outlet property="lblOwnerName" destination="nuP-6D-iFt" id="DCn-Bo-SAR"/>
+                <outlet property="lblPicName" destination="CX8-xK-IZk" id="HcL-bf-ooJ"/>
+                <outlet property="viewGradient" destination="HH2-fH-pN3" id="gjc-8s-LMP"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="95"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="star.circle" catalog="system" width="64" height="60"/>
+        <image name="star.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
