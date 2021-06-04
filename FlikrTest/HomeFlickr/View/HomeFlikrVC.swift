@@ -43,7 +43,6 @@ class HomeFlikrVC: UITableViewController {
             }
         }).disposed(by:disposeBag)
         
-        
         // observing errors to show
         homeViewModel
             .error
@@ -73,18 +72,19 @@ extension HomeFlikrVC {
         cell.lblPicName.text = element.title
         cell.lblOwnerName.text = element.ownername
         cell.btnFav.isSelected = element.isFav
+        cell.btnFav.tag = indexPath.row
         cell.imgOfFlickr?.loadImage(fromURL: element.url) // Cache used here
-        cell.btnFav.rx.controlEvent(.touchUpInside).bind {
+        cell.btnFav.rx.controlEvent(.touchUpInside).bind { [weak self] in
             photosFlickrGlobal[indexPath.row].isFav = !photosFlickrGlobal[indexPath.row].isFav
             cell.btnFav.isSelected = photosFlickrGlobal[indexPath.row].isFav
             if photosFlickrGlobal[indexPath.row].isFav == true {
                 //                Add then Observe or notify the photoFlikrFav object
-                self.homeViewModel.photoFlikrFav.add(element: photosFlickrGlobal[indexPath.row])
+                self?.homeViewModel.photoFlikrFav.add(element: photosFlickrGlobal[indexPath.row])
             } else {
                 //                Remove then Observe or notify the photoFlikrFav object
-                self.homeViewModel.photoFlikrFav.removeItem(element: element)
+                self?.homeViewModel.photoFlikrFav.removeItem(element: element)
             }
-        }.disposed(by: cell.dispose)
+        }.disposed(by: cell.bag)
         return cell
     }
     

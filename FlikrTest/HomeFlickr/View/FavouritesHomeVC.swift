@@ -55,7 +55,7 @@ class FavouritesHomeVC: UITableViewController {
                 DispatchQueue.main.async {
                     homeVC.tableView.reloadRows(at: homeVC.tableView?.indexPathsForVisibleRows ?? [], with: .none)
                 }
-            }.disposed(by: cell.dispose)
+            }.disposed(by: cell.bag)
         }.disposed(by: disposeBag)
     }
     

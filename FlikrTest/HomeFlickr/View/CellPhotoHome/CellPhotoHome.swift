@@ -11,10 +11,14 @@ import RxSwift
 
 class CellPhotoHome: UITableViewCell, ReusableIdentifier {
     
-    let dispose = DisposeBag()
+    var bag = DisposeBag()
     @IBOutlet weak var lblPicName: UILabel!
     @IBOutlet weak var lblOwnerName: UILabel!
     @IBOutlet weak var btnFav: UIButton!
     @IBOutlet weak var viewGradient: UIView!
     @IBOutlet weak var imgOfFlickr: UIImageView!
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        bag = DisposeBag()
+    }
 }
